@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include crm_addon *.css
+recursive-include crm_addon *.csv
+recursive-include crm_addon *.html
+recursive-include crm_addon *.ico
+recursive-include crm_addon *.js
+recursive-include crm_addon *.json
+recursive-include crm_addon *.md
+recursive-include crm_addon *.png
+recursive-include crm_addon *.py
+recursive-include crm_addon *.svg
+recursive-include crm_addon *.txt
+recursive-exclude crm_addon *.pyc
