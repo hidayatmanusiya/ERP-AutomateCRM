@@ -118,13 +118,20 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "Issue":{
+        "after_insert":"crm_addon.crm_addon.doctype.issue.after_insert",
+    },
+    "Maintenance Visit":{
+        "after_insert":"crm_addon.crm_addon.doctype.maintenance_visit.after_insert",
+    }
+
+}
 
 # Scheduled Tasks
 # ---------------
